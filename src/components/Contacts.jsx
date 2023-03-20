@@ -10,6 +10,23 @@ const StyledContacts = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+
+  > h3 {
+    color: white;
+    position: absolute;
+    top: -40px;
+  }
+`;
+const ContactsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 5rem 0;
+
+  > h3 {
+    color: white;
+  }
 `;
 
 const ContactsBox = styled.div`
@@ -51,13 +68,21 @@ const contacts = [
 
 function Contacts() {
   return (
-    <StyledContacts>
-      {contacts.map((contact) => (
-        <a key={contact.url} href={contact.url} target="_blank" rel="referrer">
-          <ContactsBox>{contact.icon}</ContactsBox>
-        </a>
-      ))}
-    </StyledContacts>
+    <ContactsContainer id="contacts-container">
+      <StyledContacts>
+        <h3>Contacts</h3>
+        {contacts.map((contact) => (
+          <a
+            key={contact.url}
+            href={contact.url}
+            target="_blank"
+            rel="referrer"
+          >
+            <ContactsBox>{contact.icon}</ContactsBox>
+          </a>
+        ))}
+      </StyledContacts>
+    </ContactsContainer>
   );
 }
 

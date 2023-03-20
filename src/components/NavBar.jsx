@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { scrollToSection } from "../utils";
 
 import Button from "./Button";
 
@@ -16,11 +17,15 @@ const StyledNav = styled.div`
 
 const links = ["Projects", "Skills", "Contacts"];
 
+function handleNavButtonClick(name) {
+  scrollToSection(`${name.toLowerCase()}-container`);
+}
+
 function NavBar() {
   return (
     <StyledNav>
       {links.map((link) => (
-        <Button key={link} isNav>
+        <Button key={link} onClick={() => handleNavButtonClick(link)} isNav>
           {link}
         </Button>
       ))}

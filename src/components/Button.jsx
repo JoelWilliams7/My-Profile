@@ -34,8 +34,12 @@ const StyledButton = styled.button`
   }
 `;
 
-function Button({ isNav, children }) {
-  return <StyledButton isNav={isNav}>{children}</StyledButton>;
+function Button({ isNav, children, onClick, className }) {
+  return (
+    <StyledButton className={className} onClick={onClick} isNav={isNav}>
+      {children}
+    </StyledButton>
+  );
 }
 
 export default Button;
