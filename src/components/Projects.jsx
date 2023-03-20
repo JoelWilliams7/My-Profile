@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import booksProjectsPic from "../assets/books-project.png";
+import photoSearchingLibrary from "../assets/photo-searching-library.png";
 
 const StyledProject = styled.div`
   display: flex;
@@ -62,6 +63,30 @@ function Project() {
             Welcome to your Books library, here you can create, edit, delete,
             and save all of your must read books. Using Supabase for backend and
             database.
+          </p>
+        </a>
+      </StyledProject>
+      <StyledProject>
+        <a
+          href="https://joelwilliams7.github.io/pics2/"
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            textDecoration: "none",
+            color: "white",
+          }}
+        >
+          <img
+            src={photoSearchingLibrary}
+            alt="photo Searching Library"
+            style={{
+              width: "100%",
+            }}
+          />
+          <h4>Search for the most ideal Photo</h4>
+          <p>
+            Welcome to my photo Search page. Here you can search for any photo
+            that can be totally reusable, without any copy right restriction.
           </p>
         </a>
       </StyledProject>
