@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import booksProjectsPic from "../assets/books-project.png";
 
-const StyledProjects = styled.div`
+const StyledProject = styled.div`
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -21,6 +21,10 @@ const StyledProjects = styled.div`
   p {
     font-size: 12px;
   }
+
+  h4 {
+    color: #ff6464;
+  }
 `;
 
 const ProjectsContainer = styled.div`
@@ -36,20 +40,31 @@ function Project() {
   return (
     <ProjectsContainer id="projects-container">
       <h3>Projects</h3>
-      <StyledProjects>
-        <img
-          src={booksProjectsPic}
-          alt="Book Projects Pic"
+      <StyledProject>
+        <a
+          href="https://joelwilliams7.github.io/Books-Project/"
+          target="_blank"
+          rel="noreferrer"
           style={{
-            width: "100%",
+            textDecoration: "none",
+            color: "white",
           }}
-        />
-        <p>
-          Welcome to your Books library, here you can create, edit, delete, and
-          save all of your must read books. Using Supabase for backend and
-          database.
-        </p>
-      </StyledProjects>
+        >
+          <img
+            src={booksProjectsPic}
+            alt="Book Projects Pic"
+            style={{
+              width: "100%",
+            }}
+          />
+          <h4>Welcome to your Books library</h4>
+          <p>
+            Welcome to your Books library, here you can create, edit, delete,
+            and save all of your must read books. Using Supabase for backend and
+            database.
+          </p>
+        </a>
+      </StyledProject>
     </ProjectsContainer>
   );
 }
