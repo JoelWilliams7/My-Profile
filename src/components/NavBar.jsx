@@ -15,7 +15,7 @@ const StyledNav = styled.div`
   background: transparent;
 `;
 
-const links = ["Projects", "Skills", "Contacts"];
+const links = ["Projects", "Skills", "Contacts", "Resume"];
 
 function handleNavButtonClick(name) {
   scrollToSection(`${name.toLowerCase()}-container`);

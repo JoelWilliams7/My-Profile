@@ -4,8 +4,6 @@ import booksProjectsPic from "../assets/books-project.png";
 import photoSearchingLibrary from "../assets/photo-searching-library.png";
 
 const StyledProject = styled.div`
-  display: flex;
-  flex-direction: column;
   width: 25%;
   height: 25rem;
   background: rgba(255, 255, 255, 0.1);
@@ -26,70 +24,86 @@ const StyledProject = styled.div`
   h4 {
     color: #ff6464;
   }
+
+  a {
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
+`;
+
+const Projects = styled.div`
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: white;
 `;
 
 const ProjectsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  flex-wrap: wrap;
-  align-items: center;
-  color: white;
+  text-align: center;
+  margin: 5rem 0;
+
+  > h3 {
+    color: white;
+  }
 `;
 
 function Project() {
   return (
     <ProjectsContainer id="projects-container">
       <h3>Projects</h3>
-      <StyledProject>
-        <a
-          href="https://joelwilliams7.github.io/Books-Project/"
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            textDecoration: "none",
-            color: "white",
-          }}
-        >
-          <img
-            src={booksProjectsPic}
-            alt="Book Projects Pic"
+      <Projects>
+        <StyledProject>
+          <a
+            href="https://joelwilliams7.github.io/Books-Project/"
+            target="_blank"
+            rel="noreferrer"
             style={{
-              width: "100%",
+              textDecoration: "none",
+              color: "white",
             }}
-          />
-          <h4>Welcome to your Books library</h4>
-          <p>
-            Welcome to your Books library, here you can create, edit, delete,
-            and save all of your must read books. Using Supabase for backend and
-            database.
-          </p>
-        </a>
-      </StyledProject>
-      <StyledProject>
-        <a
-          href="https://joelwilliams7.github.io/pics2/"
-          target="_blank"
-          rel="noreferrer"
-          style={{
-            textDecoration: "none",
-            color: "white",
-          }}
-        >
-          <img
-            src={photoSearchingLibrary}
-            alt="photo Searching Library"
+          >
+            <img src={booksProjectsPic} alt="Book Projects Pic" />
+            <h4>Welcome to your Books library</h4>
+            <p>
+              Welcome to your Books library, here you can create, edit, delete,
+              and save all of your must read books. Using Supabase for backend
+              and database.
+            </p>
+          </a>
+        </StyledProject>
+        <StyledProject>
+          <a
+            href="https://joelwilliams7.github.io/pics2/"
+            target="_blank"
+            rel="noreferrer"
             style={{
-              width: "100%",
+              textDecoration: "none",
+              color: "white",
             }}
-          />
-          <h4>Search for the most ideal Photo</h4>
-          <p>
-            Welcome to my photo Search page. Here you can search for any photo
-            that can be totally reusable, without any copy right restriction.
-          </p>
-        </a>
-      </StyledProject>
+          >
+            <img src={photoSearchingLibrary} alt="photo Searching Library" />
+            <h4>Search for the most ideal Photo</h4>
+            <p>
+              Welcome to my photo Search page. Here you can search for any photo
+              that can be totally reusable, without any copy right restriction.
+            </p>
+          </a>
+        </StyledProject>
+      </Projects>
     </ProjectsContainer>
   );
 }

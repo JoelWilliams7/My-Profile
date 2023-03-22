@@ -17,6 +17,10 @@ const StyledContacts = styled.div`
     position: absolute;
     top: -40px;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 const ContactsContainer = styled.div`
   display: flex;
@@ -49,6 +53,12 @@ const ContactsBox = styled.div`
     color: white;
     outline: 2px solid white;
   }
+
+  @media (max-width: 768px) {
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem 0;
+  }
 `;
 
 const contacts = [
@@ -58,7 +68,7 @@ const contacts = [
   },
   {
     icon: <Linkedin />,
-    url: "https//www.linkedin.com/in/joel-willams-817a8861",
+    url: "https://www.linkedin.com/in/joel-williams-817a8861/",
   },
   {
     icon: <Inbox />,

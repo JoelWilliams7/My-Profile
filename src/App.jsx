@@ -1,5 +1,13 @@
 import React from "react";
-import { NavBar, Contacts, Skills, Projects, UpButton } from "./components";
+import {
+  NavBar,
+  Contacts,
+  Skills,
+  Projects,
+  UpButton,
+  Footer,
+  Resume,
+} from "./components";
 
 function App() {
   return (
@@ -9,6 +17,8 @@ function App() {
       <Contacts />
       <Skills />
       <Projects />
+      <Resume />
+      <Footer />
     </div>
   );
 }

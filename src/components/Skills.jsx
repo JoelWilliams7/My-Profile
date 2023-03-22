@@ -30,6 +30,10 @@ const StyledSkill = styled.div`
   h3 {
     color: #ff6464;
   }
+
+  @media (max-width: 768px) {
+    width: 50%;
+  }
 `;
 
 const SkillsBox = styled.div`
