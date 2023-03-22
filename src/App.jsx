@@ -1,6 +1,7 @@
 import React from "react";
 import {
   NavBar,
+  Content,
   Contacts,
   Skills,
   Projects,
@@ -14,6 +15,7 @@ function App() {
     <div className="App">
       <UpButton />
       <NavBar />
+      <Content />
       <Contacts />
       <Skills />
       <Projects />

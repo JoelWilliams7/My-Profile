@@ -74,8 +74,8 @@ const ResumeContainer = styled.div`
   h3 {
     color: white;
     position: absolute;
-    top: 1999px;
-    padding: 33px;
+    top: 2225px;
+    padding: 30px;
 
     display: block;
     margin-block-start: 0.67em;
