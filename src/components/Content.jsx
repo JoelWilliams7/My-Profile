@@ -17,7 +17,15 @@ const StyledContent = styled.div`
   }
 
   p {
+    margin-left: 80px;
     color: #e5a186;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    font-weight: 550;
+    width: 75vw;
+    line-height: 150%;
+    text-align: center;
+    border-radius: 0.5rem;
   }
 `;
 

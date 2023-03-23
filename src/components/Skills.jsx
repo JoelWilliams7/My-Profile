@@ -17,7 +17,6 @@ const StyledSkill = styled.div`
   padding: 1rem;
   margin: 2rem;
   justify-content: space-around;
-  -webkit-box-align: center;
   align-items: center;
   font-weight: 500;
   animation: 0.6s ease 0s 1 normal none running fadeIn;

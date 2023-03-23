@@ -25,21 +25,6 @@ const StyledResume = styled.div`
   animation: 0.6s ease 0s 1 normal none running enterLeft;
 
   button {
-    writing-mode: horizontal-tb !important;
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-variant-alternates: ;
-    font-weight: ;
-    font-stretch: ;
-    font-size: ;
-    font-family: ;
-    font-optical-sizing: ;
-    font-kerning: ;
-    font-feature-settings: ;
-    font-variation-settings: ;
     text-rendering: auto;
     color: buttontext;
     letter-spacing: normal;
@@ -50,6 +35,7 @@ const StyledResume = styled.div`
     text-shadow: none;
     text-align: center;
     cursor: default;
+    margin-right: 30px;
   }
 
   &:hover {
@@ -76,19 +62,16 @@ const ResumeContainer = styled.div`
     position: absolute;
     top: 2225px;
     padding: 30px;
-
+    margin-top: 50px;
     display: block;
-    margin-block-start: 0.67em;
-    margin-block-end: 0.67em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+
     font-weight: bold;
   }
 `;
 
 function Resume() {
   return (
-    <ResumeContainer>
+    <ResumeContainer id="resume-container">
       <h3>Resume</h3>
       <StyledResume>
         <a href={joelResumeUpdated} download>
