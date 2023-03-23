@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 import { scrollToSection } from "../utils";
-import portfolioProfilePic from "../assets/Portfolio-Profile-Photo.jpg";
 
 import Button from "./Button";
 
