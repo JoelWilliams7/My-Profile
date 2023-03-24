@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useWindupString } from "windups";
 
 const StyledContent = styled.div`
   > h4 {
@@ -30,6 +31,11 @@ const StyledContent = styled.div`
 `;
 
 function Content() {
+  const StringyWindup = () => {
+    const [text] = useWindupString("Content");
+    return <div>{text}</div>;
+  };
+
   return (
     <StyledContent>
       <h4>Frontend Developer | React</h4>

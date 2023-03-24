@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import joelResumeUpdated from "../assets/Joel Resume updated.pdf";
+import joelResumeUpdated from "../assets/Joel Williams Web Developer Resume.pdf";
 
 const StyledResume = styled.div`
   position: relative;

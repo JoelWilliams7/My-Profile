@@ -1,19 +1,24 @@
 {
   "name": "my-profile",
+  "homepage": "https://joelwilliams7.github.io/My-Profile",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^5.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-feather": "^2.0.10",
     "react-icons": "^4.8.0",
-    "styled-components": "^5.3.9"
+    "styled-components": "^5.3.9",
+    "windups": "^1.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
