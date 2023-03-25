@@ -1,7 +1,7 @@
 {
   "name": "my-profile",
   "homepage": "https://joelwilliams7.github.io/My-Profile",
-  "private": false,
+  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
