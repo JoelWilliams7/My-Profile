@@ -4,12 +4,9 @@ import joelResumeUpdated from "../assets/Joel Williams Web Developer Resume.pdf"
 
 const StyledResume = styled.div`
   position: relative;
-  margin: 50px auto;
   width: 11rem;
   height: 2.5rem;
   background: white;
-  color: var(--main-black);
-  border: 2px solid var(--main-black);
   border-radius: 20px;
   outline: none;
   cursor: pointer;
@@ -21,21 +18,12 @@ const StyledResume = styled.div`
   align-items: center;
   -webkit-box-pack: center;
   justify-content: center;
-  transition: all 0.3s ease-in-out 0s;
-  animation: 0.6s ease 0s 1 normal none running enterLeft;
+  transition: all 0.4s;
 
-  button {
-    text-rendering: auto;
-    color: buttontext;
-    letter-spacing: normal;
-    word-spacing: normal;
-    line-height: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    text-align: center;
-    cursor: default;
-    margin-right: 30px;
+  a {
+    color: #2e4f4f;
+    transition: color 0.4s;
+    text-decoration: none;
   }
 
   &:hover {
@@ -43,6 +31,10 @@ const StyledResume = styled.div`
     background: #2e4f4f;
     color: white;
     outline: 2px solid white;
+
+    a {
+      color: white;
+    }
   }
 
   @media (max-width: 768px) {
@@ -53,9 +45,11 @@ const StyledResume = styled.div`
 `;
 
 const ResumeContainer = styled.div`
-  width: 150px;
+  width: 100%;
   color: rgb(255, 255, 255);
-  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h3 {
     color: white;
