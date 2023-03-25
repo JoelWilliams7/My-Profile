@@ -6,28 +6,26 @@ const StyledContent = styled.div`
   > h4 {
     position: relative;
     display: flex;
-    left: 150px;
-    margin-top: 4rem;
-    margin-bottom: 1.5rem;
     justify-content: center;
     align-items: center;
-    width: fit-content;
     font-size: 40px;
     color: Pink;
-    padding: 10px;
+    padding: 20px;
+    flex-direction: column;
   }
 
   p {
-    margin-left: 80px;
     color: #e5a186;
     background: rgba(255, 255, 255, 0.1);
     box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
     font-weight: 550;
-    width: 75vw;
+    margin: 60px;
     line-height: 150%;
     text-align: center;
     border-radius: 0.5rem;
-    padding: 0.5rem;
+    padding: 0.9rem;
+    flex-direction: column;
+    align-items: center;
   }
 `;
 
