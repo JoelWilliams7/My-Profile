@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { useWindupString } from "windups";
+import { WindupChildren, Pace } from "windups";
 
 const StyledContent = styled.div`
   > h4 {
@@ -27,18 +27,20 @@ const StyledContent = styled.div`
     line-height: 150%;
     text-align: center;
     border-radius: 0.5rem;
+    padding: 0.5rem;
   }
 `;
 
 function Content() {
-  const StringyWindup = () => {
-    const [text] = useWindupString("Content");
-    return <div>{text}</div>;
-  };
-
   return (
     <StyledContent>
-      <h4>Frontend Developer | React</h4>
+      <WindupChildren>
+        <h4>
+          <Pace getPace={(char) => (char === " " ? 400 : 80)}>
+            Frontend Developer | React
+          </Pace>
+        </h4>
+      </WindupChildren>
       <p>
         In a digital age, we are driven by the technological advancement of
         science and innovation, and working from a call center has not brought
