@@ -14,9 +14,7 @@ const StyledResume = styled.div`
   font-size: 1rem;
   font-family: Nunito, sans-serif;
   display: flex;
-  -webkit-box-align: center;
   align-items: center;
-  -webkit-box-pack: center;
   justify-content: center;
   transition: all 0.4s;
 
@@ -41,6 +39,7 @@ const StyledResume = styled.div`
     width: 80px;
     height: 80px;
     margin: 0.5rem 0;
+    margin-top: 50px;
   }
 `;
 
@@ -54,13 +53,26 @@ const ResumeContainer = styled.div`
   h3 {
     color: white;
     position: absolute;
-    top: 2225px;
+    top: 2260px;
     padding: 30px;
-    margin-top: 50px;
+    margin: 40px;
     display: block;
-
     font-weight: bold;
+    
   }
+  @media (max-width: 768px) {
+    h3 {
+    position: absolute;
+    border-radius: -px:
+    height: 80px;
+    margin-top: 260px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    buttom: 5px;
+    top: 4200px;
+  }
+}
 `;
 
 function Resume() {

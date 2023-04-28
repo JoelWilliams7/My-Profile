@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import booksProjectsPic from "../assets/books-project.png";
 import photoSearchingLibrary from "../assets/photo-searching-library.png";
+import jsElectrical from "../assets/Js-Electrical.png";
 
 const StyledProject = styled.div`
   width: 25%;
@@ -100,6 +101,26 @@ function Project() {
             <p>
               Welcome to my photo Search page. Here you can search for any photo
               that can be totally reusable, without any copy right restriction.
+            </p>
+          </a>
+        </StyledProject>
+        <StyledProject>
+          <a
+            href="https://joelwilliams7.github.io/Js-Electrical/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "white",
+            }}
+          >
+            <img src={jsElectrical} alt="Js Electrical Online Store" />
+            <h4>Purchase one of our Amazing products</h4>
+            <p>
+              Welcome to my Online Store. Here you can check out amazing
+              electronics Sold right here in Jamaica, for a low fee. You can
+              have special orders or request done with free delivery in
+              Kingston.
             </p>
           </a>
         </StyledProject>
