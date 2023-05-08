@@ -322,7 +322,7 @@ Error generating stack: `+o.message+`
   }
 
   @media (max-width: 768px) {
-    width: 50% auto;
+    width: 50%;
     height: auto;
   }
 `,wE=Be.div`
