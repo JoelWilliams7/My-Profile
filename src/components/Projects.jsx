@@ -3,6 +3,7 @@ import styled from "styled-components";
 import booksProjectsPic from "../assets/books-project.png";
 import photoSearchingLibrary from "../assets/photo-searching-library.png";
 import jsElectrical from "../assets/Js-Electrical.png";
+import landingpage from "../assets/Landing-Page.png";
 
 const StyledProject = styled.div`
   width: 25%;
@@ -13,10 +14,8 @@ const StyledProject = styled.div`
   border: none;
   padding: 1rem;
   margin: 2rem;
-  -webkit-box-align: center;
   align-items: center;
   font-weight: 500;
-  animation: 0.6s ease 0s 1 normal none running fadeIn;
 
   p {
     font-size: 12px;
@@ -38,7 +37,8 @@ const StyledProject = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 50%;
+    width: 50% auto;
+    height: auto;
   }
 `;
 
@@ -117,10 +117,30 @@ function Project() {
             <img src={jsElectrical} alt="Js Electrical Online Store" />
             <h4>Purchase one of our Amazing products</h4>
             <p>
-              Welcome to my Online Store. Here you can check out amazing
+              Welcome to my Online Store. Here you can check out our amazing
               electronics Sold right here in Jamaica, for a low fee. You can
               have special orders or request done with free delivery in
               Kingston.
+            </p>
+          </a>
+        </StyledProject>
+        <StyledProject>
+          <a
+            href="https://joelwilliams7.github.io/landing-Page/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              textDecoration: "none",
+              color: "white",
+            }}
+          >
+            <img src={landingpage} alt="Restaurant Landing Page" />
+            <h4>Order up, Check out our menu for one of our dishes.</h4>
+            <p>
+              Welcome to my Restaurant Landing Page. Here you can check out our
+              amazing Dishes you can have delivered to you, Booking can be done
+              at anytime for the best experience. We have the best chef's that
+              has your best meals in mind.
             </p>
           </a>
         </StyledProject>

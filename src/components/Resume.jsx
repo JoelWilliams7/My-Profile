@@ -36,41 +36,28 @@ const StyledResume = styled.div`
   }
 
   @media (max-width: 768px) {
-    width: 80px;
-    height: 80px;
+    width: 100px auto;
+    height: 80px auto;
     margin: 0.5rem 0;
     margin-top: 50px;
+    border-radius: 75px;
   }
 `;
 
 const ResumeContainer = styled.div`
-  width: 100%;
+  width: 160px;
   color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  h3 {
-    color: white;
-    position: absolute;
-    top: 2260px;
-    padding: 30px;
-    margin: 40px;
-    display: block;
-    font-weight: bold;
+  margin: 90px auto;
+  padding: 40px auto;
+  text-align: center;
     
   }
   @media (max-width: 768px) {
     h3 {
-    position: absolute;
-    border-radius: -px:
-    height: 80px;
-    margin-top: 260px;
-    padding: 10px;
-    text-align: center;
-    margin: 0 auto;
-    buttom: 5px;
-    top: 4200px;
+      width: 100px auto;
+      height: 80px auto;
+      margin: 0.5rem 0;
+      margin-top: 50px;
   }
 }
 `;
