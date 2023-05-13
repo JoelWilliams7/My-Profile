@@ -68,7 +68,7 @@ const contacts = [
   },
   {
     icon: <Linkedin />,
-    url: "https://www.linkedin.com/in/joel-williams-817a8861/",
+    url: "https://www.linkedin.com/in/joel-r-williams",
   },
   {
     icon: <Inbox />,
