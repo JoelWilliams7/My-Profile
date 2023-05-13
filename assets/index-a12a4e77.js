@@ -192,7 +192,7 @@ Error generating stack: `+o.message+`
     height: 80px;
     margin: 0.5rem 0;
   }
-`,bw=[{icon:S(Kw,{}),url:"https://github.com/joelwilliams7"},{icon:S(Lw,{}),url:"https://www.linkedin.com/in/joel-williams-817a8861/"},{icon:S(zw,{}),url:"mailto:joelrwilliams43@gmail.com"}];function _w(){return S(Zw,{id:"contacts-container",children:ye(Xw,{children:[S("h3",{children:"Contacts"}),bw.map(e=>S("a",{href:e.url,target:"_blank",rel:"referrer",children:S(Ww,{children:e.icon})},e.url))]})})}const $w="/My-Profile/assets/html-5-e06cf6e9.svg",eE="/My-Profile/assets/css-3-fb2a7534.svg",nE="/My-Profile/assets/javascript-e4f7047f.svg",tE="/My-Profile/assets/react-0fda145d.svg",rE=Be.div`
+`,bw=[{icon:S(Kw,{}),url:"https://github.com/joelwilliams7"},{icon:S(Lw,{}),url:"https://www.linkedin.com/in/joel-r-williams"},{icon:S(zw,{}),url:"mailto:joelrwilliams43@gmail.com"}];function _w(){return S(Zw,{id:"contacts-container",children:ye(Xw,{children:[S("h3",{children:"Contacts"}),bw.map(e=>S("a",{href:e.url,target:"_blank",rel:"referrer",children:S(Ww,{children:e.icon})},e.url))]})})}const $w="/My-Profile/assets/html-5-e06cf6e9.svg",eE="/My-Profile/assets/css-3-fb2a7534.svg",nE="/My-Profile/assets/javascript-e4f7047f.svg",tE="/My-Profile/assets/react-0fda145d.svg",rE=Be.div`
   display: flex;
   flex-direction: column;
   width: 25%;
